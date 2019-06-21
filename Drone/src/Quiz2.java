@@ -9,13 +9,16 @@ public class Quiz2 {
         int sum = 0;
         
         for(int i=1; i<=num; i++){
-            fibo=a+b;
-            System.out.println(fibo);
-            a=b;
-            b=fibo;
-            if(fibo%2==0) {
-            	sum = sum + fibo;
+            while(sum<=4000000) {
+            	fibo=a+b;
+                System.out.println(fibo);
+                a=b;
+                b=fibo;
+                if(fibo%2==0) {
+                	sum = sum + fibo;
+                }
             }
+        	
         }
         System.out.println(sum);
     }
